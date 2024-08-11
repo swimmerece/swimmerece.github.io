@@ -164,10 +164,10 @@ body{
             }
         
             12.5% {
-                transform: translateX(-20vw) translateY(-120vh) rotateZ(180deg);
+                transform: translateX(100vw) translateY(-120vh) rotateZ(180deg);
             }
         
-            25% {
+            12.500001%, 30% {
                 transform: translateX(80vw) translateY(120vh) rotateZ(0deg);
             }
         
@@ -197,7 +197,7 @@ body{
         transform: translateX(-120%) translateY(-120%) rotateZ(0deg);
     }
 
-    12.5% {
+    10%, 15% {
         transform: translateX(100vw) translateY(20vh) rotateZ(180deg);
     }
 
@@ -205,7 +205,7 @@ body{
         transform: translateX(-100vw) translateY(60vh) rotateZ(0deg);
     }
 
-    37.5% {
+    35%, 40% {
         transform: translateX(100vw) translateY(-40vh) rotateZ(-180deg);
     }
 
@@ -213,7 +213,7 @@ body{
         transform: translateX(-100vw) translateY(50vh) rotateZ(0deg);
     }
 
-    62.5% {
+    60%, 65% {
         transform: translateX(100vw) translateY(-50vh) rotateZ(180deg);
     }
 
@@ -221,7 +221,7 @@ body{
         transform: translateX(-100vw) translateY(40vh) rotateZ(-180deg);
     }
 
-    87.5% {
+    85%, 90% {
         transform: translateX(100vw) translateY(-60vh) rotateZ(0deg);
     }
 }
