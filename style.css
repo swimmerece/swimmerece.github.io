@@ -1,270 +1,274 @@
-body{
-    background-image: url("images/space.jpg");
+.index_page {
+  background-image: url("images/space.jpg");
 }
 
 .flier {
-	pointer-events: none;
+    position: absolute;
 }
 
 .flier-v2 {
-	position: absolute;
+  position: absolute;
 }
 
 .flier-v3 {
-	position: absolute;
+  position: absolute;
 }
 
 .flier-v4 {
-	position: absolute;
+  position: absolute;
 }
 
 .flier-v5 {
-	position: absolute;
+  position: absolute;
 }
 
-
 .flier > * {
-/* Adjust animation duration to change the element’s speed */
-        animation: fly 50s linear infinite;
-        pointer-events: none !important;
-	top: 0;
-	left: 0;
-	transform: translateX(-120%) translateY(-120%) rotateZ(0);
-	position: fixed;
-	animation-delay: 1s;
-	z-index: 999999;
+  /* Adjust animation duration to change the element’s speed */
+  animation: fly 50s linear infinite;
+  top: 0;
+  left: 0;
+  transform: translateX(-120%) translateY(-120%) rotateZ(0);
+  position: fixed;
+  animation-delay: 1s;
+  z-index: 999999;
 }
 
 .flier-v2 > * {
-    /* Adjust animation duration to change the element’s speed */
-            animation: random-float 50s linear infinite;
-            pointer-events: none !important;
-        top: 0;
-        left: 0;
-        transform: translateX(-120%) translateY(-120%) rotateZ(0);
-        position: fixed;
-        animation-delay: 1s;
-        z-index: 999999;
+  /* Adjust animation duration to change the element’s speed */
+  animation: random-float 50s linear infinite;
+  pointer-events: none !important;
+  top: 0;
+  left: 0;
+  transform: translateX(-120%) translateY(-120%) rotateZ(0);
+  position: fixed;
+  animation-delay: 1s;
+  z-index: 999999;
 }
 
 .flier-v3 > * {
-/* Adjust animation duration to change the element’s speed */
-        animation: random-path-2 50s linear infinite;
-        pointer-events: none !important;
-	top: 0;
-	left: 0;
-	transform: translateX(-120%) translateY(-120%) rotateZ(0);
-	position: fixed;
-	animation-delay: 1s;
-	z-index: 999999;
+  /* Adjust animation duration to change the element’s speed */
+  animation: random-path-2 50s linear infinite;
+  pointer-events: none !important;
+  top: 0;
+  left: 0;
+  transform: translateX(-120%) translateY(-120%) rotateZ(0);
+  position: fixed;
+  animation-delay: 1s;
+  z-index: 999999;
 }
 
 .flier-v4 > * {
-    /* Adjust animation duration to change the element’s speed */
-            animation: random-path-3 50s linear infinite;
-            pointer-events: none !important;
-        top: 0;
-        left: 0;
-        transform: translateX(-120%) translateY(-120%) rotateZ(0);
-        position: fixed;
-        animation-delay: 1s;
-        z-index: 999999;
+  /* Adjust animation duration to change the element’s speed */
+  animation: random-path-3 50s linear infinite;
+  pointer-events: none !important;
+  top: 0;
+  left: 0;
+  transform: translateX(-120%) translateY(-120%) rotateZ(0);
+  position: fixed;
+  animation-delay: 1s;
+  z-index: 999999;
 }
 
 .flier-v5 > * {
-/* Adjust animation duration to change the element’s speed */
-        animation: random-path-4 50s linear infinite;
-        pointer-events: none !important;
-	top: 0;
-	left: 0;
-	transform: translateX(-120%) translateY(-120%) rotateZ(0);
-	position: fixed;
-	animation-delay: 1s;
-	z-index: 999999;
+  /* Adjust animation duration to change the element’s speed */
+  animation: random-path-4 50s linear infinite;
+  pointer-events: none !important;
+  top: 0;
+  left: 0;
+  transform: translateX(-120%) translateY(-120%) rotateZ(0);
+  position: fixed;
+  animation-delay: 1s;
+  z-index: 999999;
 }
 
- /* Keyframe values control where the element will begin
+/* Keyframe values control where the element will begin
     and end its trajectory across the screen. Each rule
     represents a path the element follows across the screen. */
 
-
 @keyframes fly {
+  98.001%,
+  0% {
+    display: block;
+    transform: translateX(-200%) translateY(100vh) rotateZ(0deg);
+  }
 
-	98.001%, 0% {
-                display: block;
-		transform: translateX(-200%) translateY(100vh) rotateZ(0deg)
-	}
+  15% {
+    transform: translateX(100vw) translateY(-100%) rotateZ(180deg);
+  }
 
-	15% {
-		transform: translateX(100vw) translateY(-100%) rotateZ(180deg)
-	}
+  15.001%,
+  18% {
+    transform: translateX(100vw) translateY(-30%) rotateZ(0deg);
+  }
 
-	15.001%, 18% {
-		transform: translateX(100vw) translateY(-30%) rotateZ(0deg)
-	}
+  40% {
+    transform: translateX(-200%) translateY(3vh) rotateZ(-180deg);
+  }
 
-	40% {
-		transform: translateX(-200%) translateY(3vh) rotateZ(-180deg)
-	}
+  40.001%,
+  43% {
+    transform: translateX(-200%) translateY(-100%) rotateZ(-180deg);
+  }
 
-	40.001%, 43% {
-		transform: translateX(-200%) translateY(-100%) rotateZ(-180deg)
-	}
+  65% {
+    transform: translateX(100vw) translateY(50vh) rotateZ(0deg);
+  }
 
-	65% {
-		transform: translateX(100vw) translateY(50vh) rotateZ(0deg)
-	}
+  65.001%,
+  68% {
+    transform: translateX(20vw) translateY(-200%) rotateZ(180deg);
+  }
 
-	65.001%, 68% {
-		transform: translateX(20vw) translateY(-200%) rotateZ(180deg)
-	}
-
-	95% {
-		transform: translateX(10vw) translateY(100vh) rotateZ(0deg)
-	}
+  95% {
+    transform: translateX(10vw) translateY(100vh) rotateZ(0deg);
+  }
 }
-    
-     /* Keyframe values control where the element will begin
+
+/* Keyframe values control where the element will begin
         and end its trajectory across the screen. Each rule
         represents a path the element follows across the screen. */
 
-        @keyframes random-float {
-            0%, 100% {
-                transform: translateX(-120%) translateY(-120%) rotateZ(0deg);
-            }
-        
-            15% {
-                transform: translateX(100vw) translateY(20vh) rotateZ(180deg);
-            }
-        
-            30% {
-                transform: translateX(-120%) translateY(60vh) rotateZ(0deg);
-            }
-        
-            45% {
-                transform: translateX(100vw) translateY(-40vh) rotateZ(-180deg);
-            }
-        
-            60% {
-                transform: translateX(-120%) translateY(50vh) rotateZ(-180deg);
-            }
-        
-            75% {
-                transform: translateX(100vw) translateY(-30vh) rotateZ(0deg);
-            }
-        
-            90% {
-                transform: translateX(-120%) translateY(40vh) rotateZ(180deg);
-            }
-        }
+@keyframes random-float {
+  0%,
+  100% {
+    transform: translateX(-120%) translateY(-120%) rotateZ(0deg);
+  }
 
-        @keyframes random-path-2 {
-            0%, 100% {
-                transform: translateX(-120%) translateY(120%) rotateZ(0deg);
-            }
-        
-            12.5% {
-                transform: translateX(100vw) translateY(-120vh) rotateZ(180deg);
-            }
-        
-            12.500001%, 30% {
-                transform: translateX(80vw) translateY(120vh) rotateZ(0deg);
-            }
-        
-            37.5% {
-                transform: translateX(-100vw) translateY(-120vh) rotateZ(-180deg);
-            }
-        
-            50% {
-                transform: translateX(100vw) translateY(120vh) rotateZ(-180deg);
-            }
-        
-            62.5% {
-                transform: translateX(-80vw) translateY(-120vh) rotateZ(0deg);
-            }
-        
-            75% {
-                transform: translateX(70vw) translateY(120vh) rotateZ(180deg);
-            }
-        
-            87.5% {
-                transform: translateX(-60vw) translateY(-120vh) rotateZ(0deg);
-            }
-        }
+  15% {
+    transform: translateX(100vw) translateY(20vh) rotateZ(180deg);
+  }
+
+  30% {
+    transform: translateX(-120%) translateY(60vh) rotateZ(0deg);
+  }
+
+  45% {
+    transform: translateX(100vw) translateY(-40vh) rotateZ(-180deg);
+  }
+
+  60% {
+    transform: translateX(-120%) translateY(50vh) rotateZ(-180deg);
+  }
+
+  75% {
+    transform: translateX(100vw) translateY(-30vh) rotateZ(0deg);
+  }
+
+  90% {
+    transform: translateX(-120%) translateY(40vh) rotateZ(180deg);
+  }
+}
+
+@keyframes random-path-2 {
+  0%,
+  100% {
+    transform: translateX(-120%) translateY(120%) rotateZ(0deg);
+  }
+
+  12.5% {
+    transform: translateX(100vw) translateY(-120vh) rotateZ(180deg);
+  }
+
+  12.500001%,
+  30% {
+    transform: translateX(80vw) translateY(120vh) rotateZ(0deg);
+  }
+
+  37.5% {
+    transform: translateX(-100vw) translateY(-120vh) rotateZ(-180deg);
+  }
+
+  50% {
+    transform: translateX(100vw) translateY(120vh) rotateZ(-180deg);
+  }
+
+  62.5% {
+    transform: translateX(-80vw) translateY(-120vh) rotateZ(0deg);
+  }
+
+  75% {
+    transform: translateX(70vw) translateY(120vh) rotateZ(180deg);
+  }
+
+  87.5% {
+    transform: translateX(-60vw) translateY(-120vh) rotateZ(0deg);
+  }
+}
 
 @keyframes random-path-3 {
-    0%, 100% {
-        transform: translateX(-120%) translateY(-120%) rotateZ(0deg);
-    }
+  0%,
+  100% {
+    transform: translateX(-120%) translateY(-120%) rotateZ(0deg);
+  }
 
-    10%, 15% {
-        transform: translateX(100vw) translateY(20vh) rotateZ(180deg);
-    }
+  10%,
+  15% {
+    transform: translateX(100vw) translateY(20vh) rotateZ(180deg);
+  }
 
-    25% {
-        transform: translateX(-100vw) translateY(60vh) rotateZ(0deg);
-    }
+  25% {
+    transform: translateX(-100vw) translateY(60vh) rotateZ(0deg);
+  }
 
-    35%, 40% {
-        transform: translateX(100vw) translateY(-40vh) rotateZ(-180deg);
-    }
+  35%,
+  40% {
+    transform: translateX(100vw) translateY(-40vh) rotateZ(-180deg);
+  }
 
-    50% {
-        transform: translateX(-100vw) translateY(50vh) rotateZ(0deg);
-    }
+  50% {
+    transform: translateX(-100vw) translateY(50vh) rotateZ(0deg);
+  }
 
-    60%, 65% {
-        transform: translateX(100vw) translateY(-50vh) rotateZ(180deg);
-    }
+  60%,
+  65% {
+    transform: translateX(100vw) translateY(-50vh) rotateZ(180deg);
+  }
 
-    75% {
-        transform: translateX(-100vw) translateY(40vh) rotateZ(-180deg);
-    }
+  75% {
+    transform: translateX(-100vw) translateY(40vh) rotateZ(-180deg);
+  }
 
-    85%, 90% {
-        transform: translateX(100vw) translateY(-60vh) rotateZ(0deg);
-    }
+  85%,
+  90% {
+    transform: translateX(100vw) translateY(-60vh) rotateZ(0deg);
+  }
 }
 
 @keyframes random-path-4 {
-    0%, 100% {
-        transform: translateX(-120%) translateY(120%) rotateZ(0deg);
-    }
+  0%,
+  100% {
+    transform: translateX(-120%) translateY(120%) rotateZ(0deg);
+  }
 
-    10%, 15% {
-        transform: translateX(100vw) translateY(-20vh) rotateZ(180deg);
-    }
+  10%,
+  15% {
+    transform: translateX(100vw) translateY(-20vh) rotateZ(180deg);
+  }
 
-    20% {
-        transform: translateX(100vw) translateY(-40vh) rotateZ(180deg);
-    }
+  20% {
+    transform: translateX(100vw) translateY(-40vh) rotateZ(180deg);
+  }
 
-    35%, 40% {
-        transform: translateX(-100vw) translateY(60vh) rotateZ(0deg);
-    }
+  35%,
+  40% {
+    transform: translateX(-100vw) translateY(60vh) rotateZ(0deg);
+  }
 
-    50% {
-        transform: translateX(-100vw) translateY(80vh) rotateZ(0deg);
-    }
+  50% {
+    transform: translateX(-100vw) translateY(80vh) rotateZ(0deg);
+  }
 
-    65%, 70% {
-        transform: translateX(100vw) translateY(-50vh) rotateZ(-180deg);
-    }
+  65%,
+  70% {
+    transform: translateX(100vw) translateY(-50vh) rotateZ(-180deg);
+  }
 
-    80% {
-        transform: translateX(100vw) translateY(-70vh) rotateZ(-180deg);
-    }
+  80% {
+    transform: translateX(100vw) translateY(-70vh) rotateZ(-180deg);
+  }
 
-    90%, 95% {
-        transform: translateX(-100vw) translateY(50vh) rotateZ(0deg);
-    }
+  90%,
+  95% {
+    transform: translateX(-100vw) translateY(50vh) rotateZ(0deg);
+  }
 }
-
-        
-        
-        
-        
-        
-        
-    
-        
