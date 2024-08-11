@@ -14,6 +14,14 @@ body{
 	position: absolute;
 }
 
+.flier-v4 {
+	position: absolute;
+}
+
+.flier-v5 {
+	position: absolute;
+}
+
 
 .flier > * {
 /* Adjust animation duration to change the element’s speed */
@@ -42,6 +50,30 @@ body{
 .flier-v3 > * {
 /* Adjust animation duration to change the element’s speed */
         animation: random-path-2 50s linear infinite;
+        pointer-events: none !important;
+	top: 0;
+	left: 0;
+	transform: translateX(-120%) translateY(-120%) rotateZ(0);
+	position: fixed;
+	animation-delay: 1s;
+	z-index: 999999;
+}
+
+.flier-v4 > * {
+    /* Adjust animation duration to change the element’s speed */
+            animation: random-path-3 50s linear infinite;
+            pointer-events: none !important;
+        top: 0;
+        left: 0;
+        transform: translateX(-120%) translateY(-120%) rotateZ(0);
+        position: fixed;
+        animation-delay: 1s;
+        z-index: 999999;
+}
+
+.flier-v5 > * {
+/* Adjust animation duration to change the element’s speed */
+        animation: random-path-4 50s linear infinite;
         pointer-events: none !important;
 	top: 0;
 	left: 0;
@@ -159,6 +191,75 @@ body{
                 transform: translateX(-60vw) translateY(-120vh) rotateZ(0deg);
             }
         }
+
+@keyframes random-path-3 {
+    0%, 100% {
+        transform: translateX(-120%) translateY(-120%) rotateZ(0deg);
+    }
+
+    12.5% {
+        transform: translateX(100vw) translateY(20vh) rotateZ(180deg);
+    }
+
+    25% {
+        transform: translateX(-100vw) translateY(60vh) rotateZ(0deg);
+    }
+
+    37.5% {
+        transform: translateX(100vw) translateY(-40vh) rotateZ(-180deg);
+    }
+
+    50% {
+        transform: translateX(-100vw) translateY(50vh) rotateZ(0deg);
+    }
+
+    62.5% {
+        transform: translateX(100vw) translateY(-50vh) rotateZ(180deg);
+    }
+
+    75% {
+        transform: translateX(-100vw) translateY(40vh) rotateZ(-180deg);
+    }
+
+    87.5% {
+        transform: translateX(100vw) translateY(-60vh) rotateZ(0deg);
+    }
+}
+
+@keyframes random-path-4 {
+    0%, 100% {
+        transform: translateX(-120%) translateY(120%) rotateZ(0deg);
+    }
+
+    10%, 15% {
+        transform: translateX(100vw) translateY(-20vh) rotateZ(180deg);
+    }
+
+    20% {
+        transform: translateX(100vw) translateY(-40vh) rotateZ(180deg);
+    }
+
+    35%, 40% {
+        transform: translateX(-100vw) translateY(60vh) rotateZ(0deg);
+    }
+
+    50% {
+        transform: translateX(-100vw) translateY(80vh) rotateZ(0deg);
+    }
+
+    65%, 70% {
+        transform: translateX(100vw) translateY(-50vh) rotateZ(-180deg);
+    }
+
+    80% {
+        transform: translateX(100vw) translateY(-70vh) rotateZ(-180deg);
+    }
+
+    90%, 95% {
+        transform: translateX(-100vw) translateY(50vh) rotateZ(0deg);
+    }
+}
+
         
         
         
