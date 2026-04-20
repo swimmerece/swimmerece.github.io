@@ -45,6 +45,11 @@
   z-index: 999999;
 }
 
+.flier-v2 img {
+  pointer-events: auto !important;
+  cursor: pointer;
+}
+
 .flier-v3 > * {
   /* Adjust animation duration to change the element’s speed */
   animation: random-path-2 50s linear infinite;

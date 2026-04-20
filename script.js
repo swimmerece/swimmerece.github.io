@@ -3,8 +3,11 @@ document.addEventListener('DOMContentLoaded', function() {
       window.location.href = 'home.html';
     });
 
-    document.querySelector('.flier-v2 img').addEventListener('click', function() {
-      window.location.href = 'https://allpoetry.com/mad-girl%27s-love-song';
-    });
+    const sircaFanus = document.getElementById('sircaFanus');
+    if (sircaFanus) {
+      sircaFanus.addEventListener('click', function() {
+        window.location.href = 'https://allpoetry.com/mad-girl%27s-love-song';
+      });
+    }
   });
   
