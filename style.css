@@ -61,7 +61,10 @@
   animation-delay: 1s;
   z-index: 999999;
 }
-
+.flier-v3 img {
+  pointer-events: auto !important;
+  cursor: pointer;
+}
 .flier-v4 > * {
   /* Adjust animation duration to change the element’s speed */
   animation: random-path-3 50s linear infinite;

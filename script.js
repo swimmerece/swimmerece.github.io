@@ -23,5 +23,12 @@ document.addEventListener('DOMContentLoaded', function() {
         window.location.href = 'leavehertoheaven.html';
       });
     }
+
+    const degisim = document.getElementById('degisim');
+    if (degisim) {
+      degisim.addEventListener('click', function() {
+        window.location.href = 'laura.html';
+      });
+    }
   });
   
