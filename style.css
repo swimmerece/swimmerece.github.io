@@ -73,7 +73,10 @@
   animation-delay: 1s;
   z-index: 999999;
 }
-
+.flier-v4 img {
+  pointer-events: auto !important;
+  cursor: pointer;
+}
 .flier-v5 > * {
   /* Adjust animation duration to change the element’s speed */
   animation: random-path-4 50s linear infinite;
@@ -85,7 +88,10 @@
   animation-delay: 1s;
   z-index: 999999;
 }
-
+.flier-v5 img {
+  pointer-events: auto !important;
+  cursor: pointer;
+}
 /* Keyframe values control where the element will begin
     and end its trajectory across the screen. Each rule
     represents a path the element follows across the screen. */
